@@ -17,7 +17,8 @@ Route::get('/', ['as'=>'home', function(){
 }]);
 
 Route::get('contacto', ['as' => 'contactos', function(){
-	return "Hola desde la página de contacto";
+	return view('contacto');
+	// return "Hola desde la página de contacto";
 }]);
 
 Route::get('saludos/{nombre?}', ['as'=>'saludo',function($nombre = "Invitado"){
